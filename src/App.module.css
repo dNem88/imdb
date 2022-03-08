@@ -1,0 +1,14 @@
+:root{
+    --color-main: greenyellow;
+    --color-test: rgb(101, 101, 165);
+    box-sizing: border-box;
+}
+main{
+    width: 100vw;
+    padding: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color-main);
+}

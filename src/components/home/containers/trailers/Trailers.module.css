@@ -1,0 +1,8 @@
+.trailers{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-test);
+}
