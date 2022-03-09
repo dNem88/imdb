@@ -16,7 +16,7 @@ function reducer(state, action) {
              ...state,
              topRated: action.payload
          }
-    } else return {...state, error: true, errorMessage: 'Failed to Fetch!'}
+    } else return {...state, error: true, errorMessage: action.payload || 'Failed to Fetch!'}
 }
 
 export default reducer

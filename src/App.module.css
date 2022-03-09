@@ -1,6 +1,7 @@
 :root{
     --color-main: greenyellow;
     --color-test: rgb(101, 101, 165);
+    --carousel-home: 70vw;
     box-sizing: border-box;
 }
 main{
