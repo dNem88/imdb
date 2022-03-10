@@ -1,7 +1,8 @@
 :root{
-    --color-main: greenyellow;
+    --color-main: rgb(245, 197, 24);
     --color-test: rgb(101, 101, 165);
-    --carousel-home: 70vw;
+    --carousel-home: 60vw;
+    --font-medium: clamp(1.2rem,1.7vw,2.2rem);
     box-sizing: border-box;
 }
 main{
@@ -11,5 +12,5 @@ main{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--color-main);
+    background-color: black;
 }

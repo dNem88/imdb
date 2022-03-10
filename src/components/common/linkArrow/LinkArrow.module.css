@@ -1,0 +1,20 @@
+.link{
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-medium);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.link:hover{
+    color: var(--color-main);
+}
+.link:hover svg{
+    fill: var(--color-main);
+}
+.link>svg{
+    fill: white;
+    width: 1vw;
+    height: 1vw;
+    margin-left: .5vw;
+}

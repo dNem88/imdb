@@ -1,0 +1,26 @@
+.button{
+    width: 8vh;
+    height: 10vh;
+    z-index: 4;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button > svg{
+    fill: white;
+    width: 4vh;
+    height: 4vh;
+}
+.button:hover svg{
+    fill: var(--color-main);
+}
+
+@media only screen and (max-width: 850px) {
+
+    .button{
+        display: none;
+    }
+}
