@@ -1,0 +1,9 @@
+.navigation{
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--color-dark-grey);
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}

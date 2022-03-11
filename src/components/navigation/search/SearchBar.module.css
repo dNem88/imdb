@@ -1,0 +1,26 @@
+.container{
+    position: relative;
+    width: 50%;
+    height:5vh;
+    margin-right: 1.5vw;
+}
+
+.search{
+    width: 100%;
+    height: 100%;
+    padding-left: 1vw;
+    border-radius: .5rem;
+}
+.search:focus{
+    border: 2px solid var(--color-main);
+}
+.search:hover{
+    border: 2px solid var(--color-main);
+}
+.search + svg{
+    position: absolute;
+    fill: var(--text-color-grey);
+    top: .6vh;
+    right: 0.5vw;
+    cursor: pointer;
+}

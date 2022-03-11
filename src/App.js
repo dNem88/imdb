@@ -1,6 +1,7 @@
 import React, { useContext, useReducer, useEffect} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styles from './App.module.css'
+import Navigation from './components/navigation/Navigation/Navigation';
 import reducer from './reducers/reducer';
 import Home from './components/home/Home';
 import imdbContext from './context/imdbContext';
@@ -27,7 +28,7 @@ function App() {
   console.log(state)
   return (
     <BrowserRouter>
-      <p>Navigation</p>
+      <Navigation/>
       <imdbContext.Provider value={state}>
         <main>
           <Routes>
