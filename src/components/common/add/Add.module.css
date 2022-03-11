@@ -1,0 +1,29 @@
+.container{
+    width: 2.8vw;
+    height: 4vw;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+.container>svg{
+    fill: white;
+}
+.container:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.container:hover svg{
+    fill: white;
+}
+
+@media only screen and (max-width: 850px) {
+    .container{
+        width: 5vw;
+        height: 7vw;
+    }
+}

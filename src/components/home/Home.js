@@ -1,6 +1,6 @@
 import React, {Fragment, useContext, useState} from 'react'
 import imdbContext from '../../context/imdbContext'
-import Trailers from './containers/trailers/Trailers'
+import FlexRow from './containers/flex/row/FlexRow'
 import Watchlist from './containers/watchlist/Watchlist'
 import Favourites from './containers/favourites/Favourites'
 import Videos from './containers/videos/Videos'
@@ -24,14 +24,15 @@ function Home() {
     console.log(trailers)
     return (
         <Fragment>
-            <Trailers>
+            <FlexRow options={{marginBottom: '2vw'}}>
                <Carousel setIndex={setIndex}>
                    {context.topRated ? context.topRated.items.map(x => {
-                       return <Trailer title={x.fullTitle} imageUrl={x.image} />
+                       return <Trailer key={x.id} title={x.fullTitle} imageUrl={x.image} />
                    }) : <p>...Loading</p>}
                </Carousel>
-               <MoreTrailers trailers={'Array of trailers.slice(index, index+3)'}/>
-            </Trailers>
+               {context.topRated ? <MoreTrailers items={context.topRated.items.slice(trailers.index, trailers.index+3)}/> : <p>...Loading</p>}
+               
+            </FlexRow>
             <Watchlist>
 
             </Watchlist>

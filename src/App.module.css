@@ -1,12 +1,17 @@
 :root{
     --color-main: rgb(245, 197, 24);
-    --color-test: rgb(101, 101, 165);
+    --color-dark-grey: #121212 ;
+    --text-color-grey: #829278;
     --carousel-home: 60vw;
+    --font-small: clamp(1rem,1.1w,1.7rem);
     --font-medium: clamp(1.2rem,1.7vw,2.2rem);
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+}
 main{
-    width: 100vw;
+    width: 100%;
     padding: 2vw;
     display: flex;
     flex-wrap: wrap;

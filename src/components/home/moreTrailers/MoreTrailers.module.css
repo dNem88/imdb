@@ -6,11 +6,38 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: black;
-    padding: 2vw;
 }
 
-.container > div{
+.container > .movie{
     height: 25%;
     width: 100%;
-    background-color: pink;
+    padding: .5vw;
+    display: grid;
+    grid-template-rows: repeat(6, 16%);
+    grid-template-columns: repeat(12, 8.2%);
+    background-color: var(--color-dark-grey);
+}
+.movie > :nth-child(2) {
+    grid-area: 1/4/3/5;
+    cursor: pointer;
+}
+.movie > :nth-child(2) > svg:hover{
+    fill: var(--color-main);
+}
+.movie > :nth-child(3) {
+    grid-area: 3/4/4/13;
+    cursor: pointer;
+    padding-left: .5vw;
+}
+.movie > :nth-child(4) {
+    grid-area: 4/4/5/13;
+    cursor: pointer;
+    color: var(--text-color-grey);
+    padding-left: .5vw;
+}
+
+@media only screen and (max-width: 850px) {
+    .container{
+        display: none;
+    }
 }
