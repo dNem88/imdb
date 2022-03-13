@@ -11,7 +11,7 @@ function Navigation() {
     function clickHandler(e) {
         setActive({active: !active.active})
     }
-    console.log(active)
+   
     return (
         <nav className={styles.navigation}>
             <Logo/>

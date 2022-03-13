@@ -1,6 +1,7 @@
 .trailer{
     display: flex;
     align-items: flex-end;
+    width: 60vw;
     cursor: pointer;
 }
 .description{
@@ -26,7 +27,6 @@
 }
 .description > h3{
     grid-area: 4/2/5/5;
-    color: var(--text-color-grey);
 }
 .description:hover div>svg{
     fill: var(--color-main);
@@ -34,4 +34,11 @@
 }
 .trailer:hover div>svg{
     fill: var(--color-main);
+}
+
+@media only screen and (max-width: 850px) {
+    .trailer{
+        width: 100vw;
+        
+    }
 }

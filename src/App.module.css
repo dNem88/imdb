@@ -1,14 +1,21 @@
 :root{
     --color-main: rgb(245, 197, 24);
     --color-dark-grey: #121212 ;
+    --color-medium-grey: #1a1a1a;
+    --color-light-grey: #1f1f1f ;
+    --color-grey: #80798428;
+    --color-blue: #5799ef;
     --text-color-grey: #829278;
     --carousel-home: 60vw;
     --font-small: clamp(1rem,1.1w,1.7rem);
     --font-medium: clamp(1.2rem,1.7vw,2.2rem);
+    --font-large: clamp(2rem,2.5vw,3rem);
+    --pseudo-text: '|';
     box-sizing: border-box;
 }
 body{
     margin: 0;
+    background-color: black;
 }
 main{
     width: 100%;

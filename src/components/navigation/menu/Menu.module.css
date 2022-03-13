@@ -9,11 +9,14 @@
     margin-right: .5vw;
     color: white;
     cursor: pointer;
+    border-radius: .5rem;
+
 }
 .container:hover{
-    background-color: rgba(54, 52, 52, 0.616);
+    background-color: rgba(108, 100, 100, 0.521);
     border-radius: .5rem;
 }
+
 .container > svg{
     fill: var(--text-color-grey);
     cursor: pointer;
@@ -23,9 +26,14 @@
 .container > svg:hover{
     fill: white;
 }
-.container > p{
+p.container{
+    width: 70%;
+    height: 3vh;
+}
+.p-container > p{
     padding: 0;
     margin: 0;
+    text-align: center;
     padding-left: .5vw;
     font-weight: bold;
     font-size: var(--font-small);

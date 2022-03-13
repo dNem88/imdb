@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './ActiveNav.module.css'
 import {Link} from 'react-router-dom'
 
+
 function ActiveNav() {
 
     return (
@@ -11,8 +12,6 @@ function ActiveNav() {
             <Link to={'/home'}>TV Shows</Link>
             <Link to={'/home'}>In Theatres</Link>
             <Link to={'/home'}>Comming Soon</Link>
-           
-            
         </nav>
     )
 }

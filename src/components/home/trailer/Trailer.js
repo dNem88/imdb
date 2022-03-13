@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Trailer.module.css'
 import Poster from '../../common/poster/Poster'
 import Play from '../../common/playIcon/Play'
+import HeaderGrey from '../../common/h4/HeaderGrey'
 
 function Trailer({imageUrl, title}) {
 
@@ -11,7 +12,8 @@ function Trailer({imageUrl, title}) {
             <div className={styles.description}>
                 <Play href={'/trailerById'}/>
                 <h1>{title}</h1>
-                <h3>Watch the exclusive trailer</h3>
+                <HeaderGrey content={'Watch the exclusive trailer'}/>
+
             </div>
         </div>
     )
