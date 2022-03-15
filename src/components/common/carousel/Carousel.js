@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from 'react'
 import styles from './Carousel.module.css'
 import ButtonCarousel from '../carousel_button/ButtonCarousel'
 
-function Carousel({children, setIndex, width, smallScreenWidth}) {
+function Carousel({children, setIndex=null, width, smallScreenWidth}) {
     const [state, setState] = useState({active: 1, sliderRect: null, windowSize: null})
     
     const slider = useRef()
@@ -39,12 +39,16 @@ function Carousel({children, setIndex, width, smallScreenWidth}) {
     function moveLeft() {
        absoluteContainer.current.style.left = `${-state.sliderRect.width * (state.active-2)}px`;
        setState({...state, active: state.active-1})
-       setIndex(state.active-1)
+       if (setIndex) {
+           setIndex(state.active-1)
+       }
     }
     function moveRight() {
         absoluteContainer.current.style.left = `${-state.sliderRect.width * state.active}px`;
         setState({...state, active: state.active+1})
-        setIndex(state.active + 1)
+        if (setIndex) {
+            setIndex(state.active + 1)
+        }
     }
     return (
         <div ref={slider} className={styles.container} style={{width: width}}>

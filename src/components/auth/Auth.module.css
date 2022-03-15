@@ -1,0 +1,19 @@
+.firebase{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.firebase > div{
+    width: 80%;
+    height:60%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description{
+    width: 50%;
+    height: 100%;
+}

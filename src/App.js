@@ -2,6 +2,7 @@ import React, { useContext, useReducer, useEffect} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styles from './App.module.css'
 import Navigation from './components/navigation/Navigation/Navigation';
+import Auth from './components/auth/Auth'
 import reducer from './reducers/reducer';
 import Home from './components/home/Home';
 import imdbContext from './context/imdbContext';
@@ -9,10 +10,12 @@ import data from './top250'
 import data2 from './popular'
 import data1 from './inTheatres'
 
+
 function App() {
   const api_key = 'k_5p1dpjq4'
   const context = useContext(imdbContext)
   const [state, dispatch] = useReducer(reducer, context)
+
   useEffect(() => {
       async function Fetch() {
           try {
@@ -33,6 +36,7 @@ function App() {
         <main>
           <Routes>
             <Route path={'/'} element={<Home />}/>
+            <Route path={'/auth/login'} element={<Auth dispatch={dispatch}/>}/>
           </Routes>
         </main>
        <p>Footer</p>

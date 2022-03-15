@@ -1,6 +1,8 @@
 
 function reducer(state, action) {
-    if (action.type === 'addMovies') {
+    if (action.type === 'user') {
+        return {...state, user: action.payload}
+    }else if (action.type === 'addMovies') {
         return {...state, movies: action.payload}
     } else if (action.type === 'addTop250Movies') {
         return {

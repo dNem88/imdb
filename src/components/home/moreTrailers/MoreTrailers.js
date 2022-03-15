@@ -11,7 +11,7 @@ function MoreTrailers({items}) {
         <div className={styles.container}>
             <Description content={'Up next'}/>
                 {items && items.map(x => {
-                    return <div className={styles.movie}>
+                    return <div key={x.id} className={styles.movie}>
                                 <Poster imageUrl={x.image} options={{gridArea: '1/1/7/3'}} link={false}/>
                                 <Play href={`/trailers/${x.id}`}/>
                                 <h3>{x.title}</h3>

@@ -45,7 +45,7 @@ function Home() {
                 <HeaderGrey content={"TV shows and movies just  for you"}/>
                 <FlexRow width='95vw' height='70vh'>
                    <Carousel width='95vw'>
-                        {context.topRated ? context.topRated.items.map(x => {
+                        {context.top250Movies ? context.top250Movies.map(x => {
                         return <Movie key={x.id} id={x.id} title={x.fullTitle} imageUrl={x.image} rating={x.imDbRating}/>
                     }) : <p>...Loading</p>}
                     </Carousel> 
@@ -54,6 +54,19 @@ function Home() {
 
             <FlexColumn height={'65vh'} options={{marginTop: '4vw', justifyContent: 'flex-start'}}>
                 <LinkArrow before={true} arrow={true} content={'From your watchlist'}/>
+            </FlexColumn>
+            
+            <FlexColumn height={'100vh'} options={{justifyContent: 'space-evenly', marginTop: '4vw'}}>
+                <Description content={`This week's top TV and movies`} options={{fontSize: 'var(--font-large)', paddingBottom: '3vw'}}/>
+                <LinkArrow before={true} arrow={true} content={'Fan favourites'}/>
+                <HeaderGrey content={"TV shows and movies just  for you"}/>
+                <FlexRow width='95vw' height='70vh'>
+                   <Carousel width='95vw'>
+                        {context.topRated ? context.topRated.items.map(x => {
+                        return <Movie key={x.id} id={x.id} title={x.fullTitle} imageUrl={x.image} rating={x.imDbRating}/>
+                    }) : <p>...Loading</p>}
+                    </Carousel> 
+                </FlexRow>
             </FlexColumn>
 
             <Favourites>
