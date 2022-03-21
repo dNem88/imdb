@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/imdb/static/css/main.1c8351f8.css",
+    "main.js": "/imdb/static/js/main.586c4914.js",
+    "static/js/787.741971bc.chunk.js": "/imdb/static/js/787.741971bc.chunk.js",
+    "static/media/logo.svg": "/imdb/static/media/logo.55e9a457321720f4833e51b2b88c641d.svg",
+    "static/media/play.svg": "/imdb/static/media/play.68d37c88a7a36c7cf425ff9aaa5ac479.svg",
+    "static/media/rightArrow.svg": "/imdb/static/media/rightArrow.2a23427f01e9b37058be6668bbb23003.svg",
+    "static/media/leftArrow.svg": "/imdb/static/media/leftArrow.cc71cd886cb4593b4c232ae3b225e7af.svg",
+    "static/media/rateStar.svg": "/imdb/static/media/rateStar.8f6aab7717566f1173038d0ccc7a6863.svg",
+    "index.html": "/imdb/index.html",
+    "static/media/search.svg": "/imdb/static/media/search.3841f7784a51c8f72319908806c27a23.svg",
+    "static/media/star.svg": "/imdb/static/media/star.0a1c68bdfad184f4e4b64eb65f07612d.svg",
+    "static/media/menu.svg": "/imdb/static/media/menu.eec57384032ed89c762e0ac0822edfab.svg",
+    "static/media/play2.svg": "/imdb/static/media/play2.d3cc7ddce66c1fe39eb10ef791eddd36.svg",
+    "static/media/add.svg": "/imdb/static/media/add.b6e513270e6e9b5244f82b89dc92b13f.svg",
+    "main.1c8351f8.css.map": "/imdb/static/css/main.1c8351f8.css.map",
+    "main.586c4914.js.map": "/imdb/static/js/main.586c4914.js.map",
+    "787.741971bc.chunk.js.map": "/imdb/static/js/787.741971bc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c8351f8.css",
+    "static/js/main.586c4914.js"
+  ]
+}
